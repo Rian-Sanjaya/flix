@@ -12,6 +12,7 @@ module Flix
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    # makes sure that we always have a database connection established when we're in the Rails console
     console do 
     	ActiveRecord::Base.connection
     end
